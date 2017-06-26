@@ -1,0 +1,51 @@
+- How did viewing a diff between two versions of a file help you see the bug that was introduced?
+on windows: FC game_new.js game_old.js
+on linux and mac:  diff -u game_new.js game_old.js
+
+- How could having easy access to the entire history of a file make you a more efficient programmer in the long term?
+It make easier to control the code changes.
+
+- What do you think are the pros and cons of manually choosing when to create a commit, like you do in Git, vs having versions automatically saved, like Google Docs does?
+pros: flexibility and make the checkpoint more meaningful
+cons: it is very subjective
+
+"When choosing whether to commit, just keep in mind that each commit should have one clear, logical purpose, and you should never do too much work without committing."
+
+- Why do you think some version control systems, like Git, allow saving multiple files in one commit, while others, like Google Docs, treat each file separately?
+Because very often the changes on the files are related, so you can control all the changes through the commit.
+
+git log
+git diff b0678b161fcf74467ed3a63110557e3d6229cfa6 df035382c41b4d0cda86a1aa30b53f15bef05b53
+git diff f19cb1b80fe27e938e4d72770ca0a42f25e99ecc b0678b161fcf74467ed3a63110557e3d6229cfa6
+
+
+- How can you use the commands git log and git diff to view the history of files?
+git log
+git diff id_1 id_2
+
+
+- Move the current project to one specific commit version
+git checkout b0678b161fcf74467ed3a63110557e3d6229cfa6
+git checkout 3884eab839af1e82c44267484cf2945a766081f3
+
+
+git config --global core.editor "'C:/Program\ Files/Notepad++/notepad++.exe' -n -w"
+git config --global push.default upstream
+git config --global merge.conflictstyle diff3
+
+- Now that you have your workspace set up, what do you want to try using Git for?
+Control code version
+
+
+a8591f086afa1db009aaa4398aca14c3b26b72da last few fixes based on a good player and probably the last commi
+3d4ff5c87b906a5efd83b85d5d5f496864229db0 removing unnecessary files
+c12dc49709452bcfb6084b3cc7dc86042cb78ca3 game over was executing even after game over - no need really. lets save memory power
+746f762e38b5bbb7d0b837464ef6ec3f8ee5bf91 Update index.htm
+* 003c8c197cd3b1e5b28b58f53ee14d7ebaa9bb3a speeding clones up
+9c76f50d1aaaa3ac9841286cca2b49bc67f29ae9 updating description, etc.
+7c81b8021ec16c5c7b240220314d01200957d605 removing an ad
+71d52709ddc4066e7a79a1d0a412e43429a0cdeb removing old readme
+* 547f4171a82ec6429d002c1acef357aec41d3f17 refactoring collision detection
+708bcce690e5faa5739bd471507c102ea16b77f7 pressing down arrow wont cause scroll down anymore
+fa4c6bade4970c282b3870ad16f1bde8164663a9 changing flattr link
+
