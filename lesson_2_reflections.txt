@@ -7,11 +7,30 @@ Staging area is a intermediary area where you can put the files/changes you want
 It's a important feature to prepare and control what you need to commit. It makes easier to create more signicant commits.
 
 - How can you use the staging area to make sure you have one commit per logical change?
+You can review the files/changes on the staging area to be sure everything is related.
 
 - What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+Testing or developing a new feature
+Fixing a bug
+Freezing a stable version of a project for one or more developers
+
+A new branch can help to control a new line of changes of a project.
 
 - How do the diagrams help you visualize the branch structure?
+The diagram is a graphic representation of the commits sequence. It's helpful mainly when a line of commits is split into new branches.
 
 - What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+The result is a new branch with all changes of both previus branches.
+The diagram makes easer to undestand the branches differences and predict the merge result.
 
 - What are the pros and cons of Git's automatic merging vs. always doing merges manually?
+Git can make it simpler to merge when it's possible to automatic merging, but it's possible Git makes a wrong merge, so I believe is safier to do manual merging.
+
+
+
+
+git checkout master
+git diff
+git diff --staged
+
+git merge master coins -m "Merge brach 'coins'"
