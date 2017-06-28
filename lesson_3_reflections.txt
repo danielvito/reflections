@@ -27,8 +27,7 @@ Considering what a saw until here, Git is the best control version tool, and Git
 
 When would you want to make changes in a separate branch rather than directly in
 master?  What benefits does each approach have?
-
-    Fill in your answer here
+When you are trying a new feature or fixing a bug.
 
 git remote -v
 git clone https://github.com/danielvito/recipes.git
