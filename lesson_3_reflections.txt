@@ -18,8 +18,7 @@ Fork to copy a project to remote repository.
 
 What is the benefit of having a copy of the last known state of the remote
 stored locally?
-
-    Fill in your answer here
+It's the only way to add updates from others contributors to your local version of the project.
 
 How would you collaborate without using Git or GitHub?  What would be easier,
 and what would be harder?
@@ -35,3 +34,6 @@ git remote -v
 git clone https://github.com/danielvito/recipes.git
 git push origin master
 git pull origin master
+git merge master origin/master -m "Merge remote-tracking branch 'origin/master'"
+git log origin/master
+
