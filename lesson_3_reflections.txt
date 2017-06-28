@@ -8,8 +8,13 @@ It's safer to analyse any new update on the project you are working on before yo
 
 Describe the differences between forks, clones, and branches.  When would you
 use one instead of another?
+Fork is a copy of a project from remote to remote.
+Clone is a copy of a project from remote or local to local.
+Branch is a copy of some version of the project into the same project. It allows one only project to hold more than one avaible version at the same time.
 
-    Fill in your answer here
+Branch for trying or fix features.
+Clone to copy a project to local repository.
+Fork to copy a project to remote repository.
 
 What is the benefit of having a copy of the last known state of the remote
 stored locally?
@@ -25,3 +30,8 @@ When would you want to make changes in a separate branch rather than directly in
 master?  What benefits does each approach have?
 
     Fill in your answer here
+
+git remote -v
+git clone https://github.com/danielvito/recipes.git
+git push origin master
+git pull origin master
