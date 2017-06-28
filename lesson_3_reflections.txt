@@ -22,8 +22,8 @@ It's the only way to add updates from others contributors to your local version 
 
 How would you collaborate without using Git or GitHub?  What would be easier,
 and what would be harder?
-
-    Fill in your answer here
+Collaborate without using any type of version control tool is very hard, almost impossible.
+Considering what a saw until here, Git is the best control version tool, and GitHub allow a collaborative project for free and throught internet.
 
 When would you want to make changes in a separate branch rather than directly in
 master?  What benefits does each approach have?
@@ -36,4 +36,6 @@ git push origin master
 git pull origin master
 git merge master origin/master -m "Merge remote-tracking branch 'origin/master'"
 git log origin/master
+git push origin different-oil
+
 
